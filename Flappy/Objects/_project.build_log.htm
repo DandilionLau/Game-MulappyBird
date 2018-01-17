@@ -1,0 +1,593 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Stanley Lai, IE, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      UL2CM3.DLL V1.159.7.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\incre\Desktop\Project\project\project.uvprojx
+Project File Date:  03/29/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'project'
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_usart.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling Draw.c...
+Board\LCD.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+Board\Draw.c: 1 warning, 0 errors
+compiling Global.c...
+compiling Interrupt.c...
+Board\Interrupt.c(134): warning:  #1-D: last line of file ends without a newline
+  }*/
+Board\Interrupt.c: 1 warning, 0 errors
+compiling LCD.c...
+Board\LCD.c(288): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(ascii<0||ascii>5) return;
+Board\LCD.c(365): warning:  #1-D: last line of file ends without a newline
+  }*/
+Board\LCD.c: 2 warnings, 0 errors
+compiling Timer.c...
+compiling main.c...
+.\Board\LCD.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+linking...
+.\Objects\_project.axf: Error: L6200E: Symbol NVIC_Init multiply defined (by misc_1.o and misc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol NVIC_PriorityGroupConfig multiply defined (by misc_1.o and misc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol NVIC_SetVectorTable multiply defined (by misc_1.o and misc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol NVIC_SystemLPConfig multiply defined (by misc_1.o and misc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SysTick_CLKSourceConfig multiply defined (by misc_1.o and misc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_AnalogWatchdogCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_AnalogWatchdogSingleChannelConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_AnalogWatchdogThresholdsConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_AutoInjectedConvCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ClearFlag multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ClearITPendingBit multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_Cmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_DMACmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_DeInit multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_DiscModeChannelCountConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_DiscModeCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ExternalTrigConvCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ExternalTrigInjectedConvCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ExternalTrigInjectedConvConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetCalibrationStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetConversionValue multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetDualModeConversionValue multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetFlagStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetITStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetInjectedConversionValue multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetResetCalibrationStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetSoftwareStartConvStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_GetSoftwareStartInjectedConvCmdStatus multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ITConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_Init multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_InjectedChannelConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_InjectedDiscModeCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_InjectedSequencerLengthConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_RegularChannelConfig multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_ResetCalibration multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_SetInjectedOffset multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_SoftwareStartConvCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_SoftwareStartInjectedConvCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_StartCalibration multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_StructInit multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol ADC_TempSensorVrefintCmd multiply defined (by stm32f10x_adc_1.o and stm32f10x_adc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_APB2PeriphResetCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_ClearFlag multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_ClearITPendingBit multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_DeInit multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_GetFlagStatus multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_GetITStatus multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_ITConfig multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_RTCOutputConfig multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_ReadBackupRegister multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_SetRTCCalibrationValue multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_TamperPinCmd multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_TamperPinLevelConfig multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol BKP_WriteBackupRegister multiply defined (by stm32f10x_bkp_1.o and stm32f10x_bkp.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_BackupResetCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_CancelTransmit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_ClearFlag multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_ClearITPendingBit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_DBGFreeze multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_DeInit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_FIFORelease multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_FilterInit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_GetFlagStatus multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_GetITStatus multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_GetLSBTransmitErrorCounter multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_GetLastErrorCode multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_GetReceiveErrorCounter multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_ITConfig multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_Init multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_MessagePending multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_OperatingModeRequest multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_Receive multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_SlaveStartBank multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_Sleep multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_StructInit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_TTComModeCmd multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_Transmit multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_TransmitStatus multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CAN_WakeUp multiply defined (by stm32f10x_can_1.o and stm32f10x_can.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_APB1PeriphResetCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_ClearFlag multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_ClearITPendingBit multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_Cmd multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_DeInit multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_EndOfMessageCmd multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_GetFlagStatus multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_GetITStatus multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_ITConfig multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_Init multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_OwnAddressConfig multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_ReceiveDataByte multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_SendDataByte multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_SetPrescaler multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CEC_StartOfMessage multiply defined (by stm32f10x_cec_1.o and stm32f10x_cec.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_CalcBlockCRC multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_CalcCRC multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_GetCRC multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_GetIDRegister multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_ResetDR multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol CRC_SetIDRegister multiply defined (by stm32f10x_crc_1.o and stm32f10x_crc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_Cmd multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_DMACmd multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_DeInit multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_DualSoftwareTriggerCmd multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_GetDataOutputValue multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_Init multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_SetChannel1Data multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_SetChannel2Data multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_SetDualChannelData multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_SoftwareTriggerCmd multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_StructInit multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DAC_WaveGenerationCmd multiply defined (by stm32f10x_dac_1.o and stm32f10x_dac.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DBGMCU_Config multiply defined (by stm32f10x_dbgmcu_1.o and stm32f10x_dbgmcu.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DBGMCU_GetDEVID multiply defined (by stm32f10x_dbgmcu_1.o and stm32f10x_dbgmcu.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DBGMCU_GetREVID multiply defined (by stm32f10x_dbgmcu_1.o and stm32f10x_dbgmcu.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_ClearFlag multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_ClearITPendingBit multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_Cmd multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_DeInit multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_GetCurrDataCounter multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_GetFlagStatus multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_GetITStatus multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_ITConfig multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_Init multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_SetCurrDataCounter multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol DMA_StructInit multiply defined (by stm32f10x_dma_1.o and stm32f10x_dma.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_ClearFlag multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_ClearITPendingBit multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_DeInit multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_GenerateSWInterrupt multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_GetFlagStatus multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_GetITStatus multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_Init multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol EXTI_StructInit multiply defined (by stm32f10x_exti_1.o and stm32f10x_exti.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ClearFlag multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_EnableWriteProtection multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_EraseAllBank1Pages multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_EraseAllPages multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_EraseOptionBytes multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ErasePage multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetBank1Status multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetFlagStatus multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetPrefetchBufferStatus multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetReadOutProtectionStatus multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetStatus multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetUserOptionByte multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_GetWriteProtectionOptionByte multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_HalfCycleAccessCmd multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ITConfig multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_Lock multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_LockBank1 multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_PrefetchBufferCmd multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ProgramHalfWord multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ProgramOptionByteData multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ProgramWord multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_ReadOutProtection multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_SetLatency multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_Unlock multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_UnlockBank1 multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_UserOptionByteConfig multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_WaitForLastBank1Operation multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FLASH_WaitForLastOperation multiply defined (by stm32f10x_flash_1.o and stm32f10x_flash.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_ClearFlag multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_ClearITPendingBit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_GetECC multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_GetFlagStatus multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_GetITStatus multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_ITConfig multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NANDCmd multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NANDDeInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NANDECCCmd multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NANDInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NANDStructInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NORSRAMCmd multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NORSRAMDeInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NORSRAMInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_NORSRAMStructInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_PCCARDCmd multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_PCCARDDeInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_PCCARDInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol FSMC_PCCARDStructInit multiply defined (by stm32f10x_fsmc_1.o and stm32f10x_fsmc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_AFIODeInit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_DeInit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ETH_MediaInterfaceConfig multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_EXTILineConfig multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_EventOutputCmd multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_EventOutputConfig multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_Init multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_PinLockConfig multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_PinRemapConfig multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ReadInputData multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ReadInputDataBit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ReadOutputData multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ReadOutputDataBit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_ResetBits multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_SetBits multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_StructInit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_Write multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol GPIO_WriteBit multiply defined (by stm32f10x_gpio_1.o and stm32f10x_gpio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ARPCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_AcknowledgeConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_CalculatePEC multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_CheckEvent multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ClearFlag multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ClearITPendingBit multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_Cmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_DMACmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_DMALastTransferCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_DeInit multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_DualAddressCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_FastModeDutyCycleConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GeneralCallCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GenerateSTART multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GenerateSTOP multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GetFlagStatus multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GetITStatus multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GetLastEvent multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_GetPEC multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ITConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_Init multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_NACKPositionConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_OwnAddress2Config multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_PECPositionConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ReadRegister multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_ReceiveData multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_SMBusAlertConfig multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_Send7bitAddress multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_SendData multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_SoftwareResetCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_StretchClockCmd multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_StructInit multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2C_TransmitPEC multiply defined (by stm32f10x_i2c_1.o and stm32f10x_i2c.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_GetClocksFreq multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_Enable multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_GetFlagStatus multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_ReloadCounter multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_SetPrescaler multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_SetReload multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IWDG_WriteAccessCmd multiply defined (by stm32f10x_iwdg_1.o and stm32f10x_iwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_BackupAccessCmd multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_ClearFlag multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_DeInit multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_EnterSTANDBYMode multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_EnterSTOPMode multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_GetFlagStatus multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_PVDCmd multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_PVDLevelConfig multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol PWR_WakeUpPinCmd multiply defined (by stm32f10x_pwr_1.o and stm32f10x_pwr.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_ADCCLKConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_AHBPeriphClockCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_APB1PeriphClockCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_APB2PeriphClockCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_AdjustHSICalibrationValue multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_ClearFlag multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_ClearITPendingBit multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_ClockSecuritySystemCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_DeInit multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_GetFlagStatus multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_GetITStatus multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_GetSYSCLKSource multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_HCLKConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_HSEConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_HSICmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_ITConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_LSEConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_LSICmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_MCOConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_PCLK1Config multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_PCLK2Config multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_PLLCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_PLLConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_RTCCLKCmd multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_RTCCLKConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_SYSCLKConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_USBCLKConfig multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RCC_WaitForHSEStartUp multiply defined (by stm32f10x_rcc_1.o and stm32f10x_rcc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_ClearFlag multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_ClearITPendingBit multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_EnterConfigMode multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_ExitConfigMode multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_GetCounter multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_GetDivider multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_GetFlagStatus multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_GetITStatus multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_ITConfig multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_SetAlarm multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_SetCounter multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_SetPrescaler multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_WaitForLastTask multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol RTC_WaitForSynchro multiply defined (by stm32f10x_rtc_1.o and stm32f10x_rtc.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_CEATAITCmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_ClearFlag multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_ClearITPendingBit multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_ClockCmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_CmdStructInit multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_CommandCompletionCmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_DMACmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_DataConfig multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_DataStructInit multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_DeInit multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetCommandResponse multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetDataCounter multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetFIFOCount multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetFlagStatus multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetITStatus multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetPowerState multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_GetResponse multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_ITConfig multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_Init multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_ReadData multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SendCEATACmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SendCommand multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SendSDIOSuspendCmd multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SetPowerState multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SetSDIOOperation multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_SetSDIOReadWaitMode multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_StartSDIOReadWait multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_StopSDIOReadWait multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_StructInit multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SDIO_WriteData multiply defined (by stm32f10x_sdio_1.o and stm32f10x_sdio.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2S_Cmd multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2S_Init multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol I2S_StructInit multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_BiDirectionalLineConfig multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_CalculateCRC multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_Cmd multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_DataSizeConfig multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_GetCRC multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_GetCRCPolynomial multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_ClearFlag multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_ClearITPendingBit multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_DMACmd multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_DeInit multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_GetFlagStatus multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_GetITStatus multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_ITConfig multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_ReceiveData multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_I2S_SendData multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_Init multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_NSSInternalSoftwareConfig multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_SSOutputCmd multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_StructInit multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol SPI_TransmitCRC multiply defined (by stm32f10x_spi_1.o and stm32f10x_spi.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ARRPreloadConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_BDTRConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_BDTRStructInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_CCPreloadControl multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_CCxCmd multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_CCxNCmd multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearFlag multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearITPendingBit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearOC1Ref multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearOC2Ref multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearOC3Ref multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ClearOC4Ref multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_Cmd multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_CounterModeConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_CtrlPWMOutputs multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_DMACmd multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_DMAConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_DeInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ETRClockMode1Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ETRClockMode2Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ETRConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_EncoderInterfaceConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ForcedOC1Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ForcedOC2Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ForcedOC3Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ForcedOC4Config multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GenerateEvent multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetCapture1 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetCapture2 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetCapture3 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetCapture4 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetCounter multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetFlagStatus multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetITStatus multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_GetPrescaler multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ICInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ICStructInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ITConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_ITRxExternalClockConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_InternalClockConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC1FastConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC1Init multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC1NPolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC1PolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC1PreloadConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC2FastConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC2Init multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC2NPolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC2PolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC2PreloadConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC3FastConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC3Init multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC3NPolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC3PolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC3PreloadConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC4FastConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC4Init multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC4PolarityConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OC4PreloadConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_OCStructInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_PWMIConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_PrescalerConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectCCDMA multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectCOM multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectHallSensor multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectInputTrigger multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectMasterSlaveMode multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectOCxM multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectOnePulseMode multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectOutputTrigger multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SelectSlaveMode multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetAutoreload multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetClockDivision multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetCompare1 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetCompare2 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetCompare3 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetCompare4 multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetCounter multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetIC1Prescaler multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetIC2Prescaler multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetIC3Prescaler multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_SetIC4Prescaler multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_TIxExternalClockConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_TimeBaseInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_TimeBaseStructInit multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_UpdateDisableConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM_UpdateRequestConfig multiply defined (by stm32f10x_tim_1.o and stm32f10x_tim.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ClearFlag multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ClearITPendingBit multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ClockInit multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ClockStructInit multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_Cmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_DMACmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_DeInit multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_GetFlagStatus multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_GetITStatus multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_HalfDuplexCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ITConfig multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_Init multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_IrDACmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_IrDAConfig multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_LINBreakDetectLengthConfig multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_LINCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_OneBitMethodCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_OverSampling8Cmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ReceiveData multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_ReceiverWakeUpCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SendBreak multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SendData multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SetAddress multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SetGuardTime multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SetPrescaler multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SmartCardCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_SmartCardNACKCmd multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_StructInit multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol USART_WakeUpConfig multiply defined (by stm32f10x_usart_1.o and stm32f10x_usart.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_ClearFlag multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_DeInit multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_Enable multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_EnableIT multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_GetFlagStatus multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_SetCounter multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_SetPrescaler multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol WWDG_SetWindowValue multiply defined (by stm32f10x_wwdg_1.o and stm32f10x_wwdg.o).
+.\Objects\_project.axf: Error: L6200E: Symbol TIM4_IRQHandler multiply defined (by timer.o and interrupt.o).
+.\Objects\_project.axf: Error: L6200E: Symbol asc2_1608 multiply defined (by lcd.o and draw.o).
+.\Objects\_project.axf: Error: L6200E: Symbol asc2_1608 multiply defined (by main.o and draw.o).
+.\Objects\_project.axf: Error: L6200E: Symbol chi_1616 multiply defined (by lcd.o and draw.o).
+.\Objects\_project.axf: Error: L6200E: Symbol chi_1616 multiply defined (by main.o and draw.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_NVIC_SetPriorityGroup multiply defined (by timer.o and interrupt.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_NVIC_SetPriorityGroup multiply defined (by main.o and interrupt.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_TIM4_Init multiply defined (by timer.o and interrupt.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_key2_ExtiInit multiply defined (by main.o and interrupt.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_LED_Init multiply defined (by main.o and timer.o).
+.\Objects\_project.axf: Error: L6200E: Symbol IERG3810_clock_tree_init multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 478 error messages.
+".\Objects\_project.axf" - 478 Error(s), 5 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_project
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>

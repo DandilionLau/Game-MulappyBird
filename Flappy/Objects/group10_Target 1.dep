@@ -1,0 +1,2 @@
+Dependencies for Project 'group10', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Fw_lib\myFirst.s)(0x56A5D570)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Users\Test\Desktop\lab-1\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 518" --pd "STM32F10X_HD SETA 1"--list .\listings\myfirst.lst --xref -o .\objects\myfirst.o --depend .\objects\myfirst.d)

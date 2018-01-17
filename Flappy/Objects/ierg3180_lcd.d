@@ -1,0 +1,5 @@
+.\objects\ierg3180_lcd.o: Board\IERG3180_LCD.c
+.\objects\ierg3180_lcd.o: .\Core\stm32f10x.h
+.\objects\ierg3180_lcd.o: .\Core\core_cm3.h
+.\objects\ierg3180_lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ierg3180_lcd.o: .\Core\system_stm32f10x.h

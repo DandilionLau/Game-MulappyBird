@@ -1,0 +1,81 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000 20002000        DCD              0x20002000
+    4 00000004 00000000        DCD              Reset_Handler
+    5 00000008         __Vectors
+    6 00000008                 AREA             AFTER_RESET,  CODE
+    7 00000000                 EXPORT           Reset_Handler
+    8 00000000         Reset_Handler
+    9 00000000 F06F 0804       mov              r8, #-5
+   10 00000004         loop
+   11 00000004 F118 0805       ADDS             r8, r8, #5
+   12 00000008 E7FC            b                loop
+   13 0000000A                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\myfirst.d -o.\objects\myfirst.o -IC:\Users\Test\Desktop\
+lab-1\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include -IC:\Ke
+il_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERS
+ION SETA 518" --predefine="STM32F10X_HD SETA 1" --list=.\listings\myfirst.lst F
+w_lib\myFirst.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file Fw_lib\myFirst.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000008
+
+Symbol: __Vectors
+   Definitions
+      At line 5 in file Fw_lib\myFirst.s
+   Uses
+      At line 2 in file Fw_lib\myFirst.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+AFTER_RESET 00000000
+
+Symbol: AFTER_RESET
+   Definitions
+      At line 6 in file Fw_lib\myFirst.s
+   Uses
+      None
+Comment: AFTER_RESET unused
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 8 in file Fw_lib\myFirst.s
+   Uses
+      At line 4 in file Fw_lib\myFirst.s
+      At line 7 in file Fw_lib\myFirst.s
+
+loop 00000004
+
+Symbol: loop
+   Definitions
+      At line 10 in file Fw_lib\myFirst.s
+   Uses
+      At line 12 in file Fw_lib\myFirst.s
+Comment: loop used once
+3 symbols
+338 symbols in table
