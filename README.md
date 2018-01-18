@@ -1,4 +1,4 @@
-# Multi-Player Flappy Bird
+# Multi-Player Flappy Bird on Cortex-M3 Embedded System
 #### IERG3810 Course Project 
 
 > This is the course projects of IERG3810 Microcontrollers and Embedded System, which aims to build a light-weighted game based on C programming on a Cortex-M3 system.  
@@ -83,13 +83,9 @@ To make the game logic to stay concise and robust, we split the game into two in
     char mode[3] = "umd";
 
     int next; // Used to show the next shape of bird
-
     int score; // Game score
-
     int wallX[3];
-
     int wallY[3];
-
     int wallPass[3]; // Three set of arrays to store the X position/Y position/enable of wall**
 
     u16 OldXPosition;
@@ -100,7 +96,6 @@ To make the game logic to stay concise and robust, we split the game into two in
     void AddWall() // Add a set of walls
     void ifAddScore() // Check if the bird has already passed one wall
     void ifFail() // Test if the bird hit the wall or be out of boundary
-
     ```
 
 
