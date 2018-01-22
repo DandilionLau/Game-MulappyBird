@@ -5,13 +5,13 @@
 
 #### I. OBJECTIVES   
 
-Flappy Bird is a popular mobile game released in 2013. The game is based on a 2D side-scrolling map feature. In the game interface, there should be a bird, a map with solid ground and several obstacles. Usually the location of those obstacles is randomly generated.
+Flappy Bird is a popular mobile game released in 2013. The game is based on a 2D side-scrolling map feature. In the game interface, there should be a bird, a map with solid ground and several obstacles. Usually, the location of those obstacles is randomly generated.
 
 <p align="center"><img src="./pics/1.png" width = "300" /></p>
 
-In this game, player need to click the screen to let the bird fly to avoid the obstacles (in the previous version they are pipes) appear in the map. With each clicking, player can give a “boost” to let the bird fly higher. Once the bird falls to the ground or knock on any objectives, the game is over. In this mini-project, touch screen will be preferred to achieve clicking.   
+In this game, the player needs to click the screen to let the bird fly to avoid the obstacles (in the previous version they are pipes) appear on the map. With each clicking, a player can give a “boost” to let the bird fly higher. Once the bird falls to the ground or knocks on any objectives, the game is over. In this mini-project, the touch screen will be preferred to achieve clicking.   
 
-There are some other features like choosing the difficulty level to that player can find a level that he would like to enjoy. Also, an introduction of the game will be shown in the beginning to simplify the game procedure. Once the bird hits any obstacles, the game will be over and the current score will be displayed on the scoreboard.   
+There are some other features like choosing the difficulty level to that player can find a level that he would like to enjoy. Also, an introduction to the game will be shown in the beginning to simplify the game procedure. Once the bird hits any obstacles, the game will be over and the current score will be displayed on the scoreboard.   
 
 1. **New Features**  
   **Multiplayer Mode** : P1 controls the bird, trying to avoid those obstacles. P2 controls the position of ‘walls’ (tubes as a matter of fact), trying to let the bird die.  
