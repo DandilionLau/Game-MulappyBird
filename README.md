@@ -1,4 +1,4 @@
-## Multi-Player Flappy Bird on Cortex-M3 Embedded System
+# A Multi-Player Flappy Bird Game
 #### IERG3810 Course Project 
 
 > This is the course projects of IERG3810 Microcontrollers and Embedded System, which aims to build a light-weighted game based on C programming on a Cortex-M3 system.  
