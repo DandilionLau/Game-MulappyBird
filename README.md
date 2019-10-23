@@ -1,4 +1,4 @@
-# Multi-Player Flappy Bird on Cortex-M3 Embedded System
+## Multi-Player Flappy Bird on Cortex-M3 Embedded System
 #### IERG3810 Course Project 
 
 > This is the course projects of IERG3810 Microcontrollers and Embedded System, which aims to build a light-weighted game based on C programming on a Cortex-M3 system.  
@@ -9,7 +9,7 @@ Flappy Bird is a popular mobile game released in 2013. The game is based on a 2D
 
 <p align="center"><img src="./pics/1.png" width = "300" /></p>
 
-In this game, the player needs to click the screen to let the bird fly to avoid the obstacles (in the previous version they are pipes) appear on the map. With each clicking, a player can give a “boost” to let the bird fly higher. Once the bird falls to the ground or knocks on any objectives, the game is over. In this mini-project, the touch screen will be preferred to achieve clicking.   
+In this game, the player needs to click the screen to let the bird fly to avoid the obstacles (in the previous version, they are pipes) appear on the map. With each clicking, a player can give a “boost” to let the bird fly higher. Once the bird falls to the ground or knocks on any objectives, the game is over. In this mini-project, the touch screen will be preferred to achieve clicking.   
 
 There are some other features like choosing the difficulty level to that player can find a level that he would like to enjoy. Also, an introduction to the game will be shown in the beginning to simplify the game procedure. Once the bird hits any obstacles, the game will be over and the current score will be displayed on the scoreboard.   
 
@@ -24,49 +24,49 @@ There are some other features like choosing the difficulty level to that player 
     2) Once start the game is played by two players.  
     3) Player1 controls the bird by touch, swipe left and right to change the bird’s position.   
        His task is to prevent the bird from hitting on the wall.   
-    4) Player2 controls the position of wall, he can use “2” and “8” to let the wall goes up and down. His task is to kill the bird.  
-    5) Once the bird hits on the wall or goes out of boundary, the game is over and score will be shown at the game over page.  
+    4) Player2 controls the position of the wall, and he/she can use “2” and “8” to let the wall goes up and down. His task is to kill the bird.  
+    5) Once the bird hits on the wall or goes out of the boundary, the game is over, and final score will be shown at the game-over page.  
     6) Press “Num Lock” to restart the game. Press “KEY2” button to change the game speed at any time of the game. Press “KEYUP” to pause the game for 10 seconds.  
 
 3. **List of Hardware**  
   **LED** : Use LED to indicate the game is paused/ resumed.  
   **Button** : Use button (KEY2) to choose the game speed, so that to control the level of difficulty.  
-  **TFTLCD** : Used as main display for gaming graphical interface.  
-  **Interrupt** : When clicking on the touch screen, interrupt will be generated. Maybe when restart, we will use some other interrupt to achieve that.  
+  **TFTLCD** : Used as the main display for gaming graphical interface.  
+  **Interrupt** : When clicking on the touch screen, an interrupt will be generated. Maybe when restart, we will use some other interrupt to achieve that.  
   **Timer** : use SYSTick to control the flying speed, falling speed of bird, the scrolling speed of map, and the display rate of the TFT screen.  
   **ADC** : ADC is used to transform the reading parameters of the X and Y positions in the touch screen.  
-  **Touch Screen** : Player need to click on the touch screen to make the bird flyer higher.  
+  **Touch Screen** : Players need to click on the touch screen to make the bird flyer higher.  
 
   <p align="center"><img src="./pics/2.png" width = "300" /></p>
 
 
 #### II. MODEL & VIEW DESIGN  
 
-To make the game logic to stay concise and robust, we split the game into two independent part: model and view.  
+To make the game logic to stay concise and robust, we split the game into two independent parts: model and view.  
 
 1. **Model Design**  
-    In the game model, there are three main elements: background, the bird, and the wall.  
+    In the game model, there are three main elements: the background, the bird, and the wall.  
     To simplify the first version of our model, we just let the background to be black.  
 
     The bird has three key parameters:    
 
-    * **X position** : X position can be changed by the user or just be a constant.     
-    * **Y position** : Y position decreases according to time lapse (falling down).     
+    * **X position** : X position can be changed by the user or be a constant.     
+    * **Y position** : Y position decreases according to time-lapse (falling down).     
     * **Alive / Dead** : The status of the bird can be told by checking if the bird has hit the wall.    
 
-    Because the programming platform is based on C language, which does not offer the advanced data structure like Queue or List, so here we just use a set of array with maximum size n to store the information of the wall:   
+    Because the programming platform is based on C language, which does not offer the advanced data structure like Queue or List, so here we use a set of arraries with maximum size n to store the information of the wall:   
 
-    * **WallPass[n]** : For each wall, 1 indicated the wall has not been passed by the bird, 2 indicates the wall has been passed by the bird, and 0 indicates the wall has been out ofthe screen boundary.   
+    * **WallPass[n]** : For each wall, 1 indicates the wall has not been passed by the bird, 2 indicates the wall has been passed by the bird, and 0 indicates the wall has been out of the screen boundary.   
     * **WallX[n]** : The x position of the wall.      
     * **WallY[n]** : The y position of the wall.    
 
-    Noted that n is the maximum number of walls appearing on the screen at the same time. In our program, consider the size of our touch screen, we let n to be 3, which means it can store the information of three walls at the same time.  
+    Note that n is the maximum number of walls appearing on the screen at the same time. In our program, consider the size of our touch screen, we let n to be 3, which means it can store the information of three walls at the same time.  
 
-    **Scroll** : The scroll of map just affects the walls but not the bird, which means the WallX[i] value would be assigned to be 240 at first and then decay with 5 pixels each time the screen refreshes.  
+    **Scroll** : The scroll of map affects the walls but not the bird, which means the WallX[i] value would be assigned to be 240 at first and then decay with 5 pixels each time the screen refreshes.  
 
     Between model and view, those global parameters need concern:  
 
-    * **Score** : the game score, in relation to the score mechanism.   
+    * **Score** : current game score.
     * **Speed** : the game speed, designed to be controlled by the interrupt caused by KEY2.  
     * **GameStatus** : indicate the current game page.  
 
@@ -100,17 +100,16 @@ To make the game logic to stay concise and robust, we split the game into two in
 
 
 2. **View Design**  
-    The view of this game includes three pages: the start page, the game page and the game
-    over page.  
+    The view of this game includes three pages: the start page, the game page, and the game-over page.  
 
     In the start page, relevant information about this game will be displayed:  
     **Game Logo** : the flappy bird logo.  
-    **Bird** : displaying a flying bird, in fact display pictures of the birds alternatingly to achieve the animation of the “flying” bird.  
-    **Instruction Guide** : tell the user how to player the game.  
+    **Bird** : displaying a flying bird, in fact, display pictures of the birds alternatingly to achieve the animation of the “flying” bird.  
+    **Instruction Guide** : tell the user how to play the game.  
 
     Based on the ShowChar() and ShowChiChar() function we used in Lab3, we can print Instruction Guide, Name, SID, and Group Number using the same technique.    
 
-    For the Game Logo and the Bird as pictures, we used the **Image2LCD** software to transform jpeg file into c file containing the positions and colors. For example, for the Bird.jpeg we set the output to be 16 bit colored and set the size to be 40 * 20.    
+    For the Game Logo and the Bird as pictures, we used the **Image2LCD** software to transform jpeg file into c file containing the positions and colors. For example, for the Bird.jpeg, we set the output to be 16 bit colored and set the size to be 40 * 20.    
 
     <p align="center"><img src="./pics/3.png" width = "400" /></p>
 
@@ -125,7 +124,7 @@ To make the game logic to stay concise and robust, we split the game into two in
 
     <p align="center"><img src="./pics/4.png" width = "500" /></p>
 
-    In the Game Over page, we will display:  
+    In the game-over page, we will display:  
 
     **Score** : displayed in our personalized font.  
     **Game Info** : guide the player to restart the game.   
@@ -162,9 +161,9 @@ To make the game logic to stay concise and robust, we split the game into two in
 In this part, several key components in our code will be illustrated and explained in detail.  
 
 1. **Multiple SYSTICKs**  
-    In our program, multiple SYSTICKs are used for different propose. We define four different HeartBeat in total and used two canBeat parameter to control the start time of two of these HeartBeats.   
+    In our program, multiple SYSTICKs are used for different propose. We define four different HeartBeat in total and used two canBeat parameters to control the start time of two of these HeartBeats.   
 
-    In the main function, task1HeatBeat is set to control the normal program flow, the display part and the game logic part, task2HeatBeat is set to renew the past wall regularly, task3HeartBeat is used to count down from 3 to 0 when game started, and Task4HeatBeat is used for detecting touch motion independently.    
+    In the main function, task1HeatBeat is set to control the normal program flow, the display part, and the game logic part, task2HeatBeat is set to renew the past wall regularly, task3HeartBeat is used to count down from 3 to 0 when game started, and Task4HeatBeat is used for detecting touch motion independently.    
 
 
 2. **Recognizing Swipe Motion on Touch Screen**  
@@ -178,15 +177,15 @@ In this part, several key components in our code will be illustrated and explain
 
 
 3. **Multiple Player Mode**  
-  As mentioned in the game manual, our version of flappy bird is designed for multiple players. Player1 controls the bird by touch, swipe left and right to change the bird’s position. His task is to prevent the bird from hitting on the wall. Player2 controls the position of wall, he can use “2” and “8” in the PS2 keyboard to let the wall goes up and down. His task is to kill the bird.   
+  As mentioned in the game manual, our version of flappy bird is designed for multiple players. Player1 controls the bird by touch, swipe left and right to change the bird’s position. His task is to prevent the bird from hitting on the wall. Player2 controls the position of the wall, and he/she can use “2” and “8” in the PS2 keyboard to let the wall goes up and down. His task is to kill the bird.   
 
-  Because the PS2 keyboard input can be handled as interrupt, so basically the control of Player is real time. For touch recognition part, we put the detection function into a relatively faster Heart Beat (20 Hz) and let the feedback of touch can be handled within 50ms.   
+  Because the PS2 keyboard input can be handled as an interrupt, so basically, the control of Player is real-time. For the touch recognition part, we put the detection function into a relatively faster Heart Beat (20 Hz) and let the feedback of touch can be handled within 50ms.   
 
 #### IV. TESTING, DIFFICULTIES AND SOLUTIONS
 
-We first test the game start page and the game over page, these two pages works fine.    
+We first test the game start page and the game-over page, these two pages work properly.    
 
-Then we move to test the game page with the bird and the walls. We find that the screen has some serious flashinges when we turn the refreshing rate to more than 20 Hz. It seems that the CPU needs some tome to finish all the drawing, the period of drawing causes flashing. We then turned the refreshing rate to a lower number like 10 Hz, this problem can be partially solved but the flashes still have a little remain.   
+Then we move to test the game page with the bird and the walls. We find that the screen has some serious flashing when we turn the refreshing rate to more than 20 Hz. It seems that the CPU needs some time to finish all the drawing process, and the period of drawing causes flashing. We then turned the refreshing rate to a lower number like 10 Hz, this problem can be partially solved, but the flashes still have a little remain.   
 
 #### V. SUMMARY  
-In this mini project, we aim to make use of all the previous components and knowledge and design our own game: Flappy Bird. As we get our hands on the project, innovative idea comes one by one. To make use of the PS2 keyboard, we have the idea to turn this single player game into a game with two players. This feature adds more fun to the game and encourage our team to move further.   Then we add the touch feature to the game. Recognizing simple touch is easy, but it has much more difficulties when handling with different gestures like swipe. We write our own swipe recognition program and tackle this problem finally.  
+In this mini-project, we aim to make use of all the previous components and knowledge and design our own game: Flappy Bird. As we get our hands on the project, innovative ideas come one by one. To make use of the PS2 keyboard, we have the idea to turn this single-player game into a game with two players. This feature adds more fun to the game and encourages our team to move further.   Then we add the touch feature to the game. Recognizing simple touch is easy, but it has much more difficulties when handling with different gestures like swipe. We write our swipe recognition program and tackle this problem finally.  
